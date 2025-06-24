@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Real Estate Agency - Premium Properties & Expert Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-purple-600">DHUDI</h1>
+                        <p class="text-xs text-gray-500">Real Estate Agency</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#properties" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">Properties</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#team" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">Team</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700 hover:text-purple-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg pt-20 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-6">Find Your Dream Home with BEAT Real Estate</h1>
+                    <p class="text-xl mb-8 opacity-90">Premium properties, expert guidance, and exceptional service. Your trusted partner in real estate success.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                            <i class="fas fa-search mr-2"></i>Browse Properties
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
+                            <i class="fas fa-phone mr-2"></i>Contact Us
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://portablepartitions.com.au/wp-content/uploads/2022/06/modern-real-estate-office-interior-design.jpeg" alt="Modern Real Estate Office" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-home text-purple-600 text-2xl mr-3"></i>
+                            <div>
+                                <p class="text-gray-500 text-sm">Properties Sold</p>
+                                <p class="text-2xl font-bold text-gray-800">500+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="bg-white py-8 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-50 rounded-2xl p-6">
+                <h2 class="text-2xl font-bold text-center mb-6">Find Your Perfect Property</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Property Type</label>
+                        <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500">
+                            <option>All Types</option>
+                            <option>House</option>
+                            <option>Apartment</option>
+                            <option>Condo</option>
+                            <option>Villa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Location</label>
+                        <input type="text" placeholder="Enter location" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Price Range</label>
+                        <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500">
+                            <option>Any Price</option>
+                            <option>$100K - $300K</option>
+                            <option>$300K - $500K</option>
+                            <option>$500K - $1M</option>
+                            <option>$1M+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">&nbsp;</label>
+                        <button class="w-full bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition">
+                            <i class="fas fa-search mr-2"></i>Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Properties</h2>
+                <p class="text-xl text-gray-600">Discover our handpicked selection of premium properties</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Property 1 -->
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://www.pompanobeachrealty.com/wp-content/uploads/2022/11/007A3073-C355-4A33-A73F-AF9E7D75749E.png" alt="Luxury Property" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Featured</div>
+                        <div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+                            <i class="far fa-heart text-gray-400 hover:text-red-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Luxury Waterfront Villa</h3>
+                        <p class="text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>Miami Beach, FL
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-4 text-sm text-gray-600">
+                                <span><i class="fas fa-bed mr-1"></i>4 Beds</span>
+                                <span><i class="fas fa-bath mr-1"></i>3 Baths</span>
+                                <span><i class="fas fa-ruler-combined mr-1"></i>2,500 sq ft</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-purple-600">$1,250,000</span>
+                            <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.ctfassets.net/s4ybdu2ld1ox/27eoDwvIaqupfIPqxA5V2I/62db0f5d7a34c4c1c32487401e13f847/2_Story_Houses.jpg?w=1280&h=853&fl=progressive&q=70&fm=jpg&bg=transparent" alt="Modern House" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">New</div>
+                        <div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+                            <i class="far fa-heart text-gray-400 hover:text-red-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Modern Family Home</h3>
+                        <p class="text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>Birmingham, AL
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-4 text-sm text-gray-600">
+                                <span><i class="fas fa-bed mr-1"></i>5 Beds</span>
+                                <span><i class="fas fa-bath mr-1"></i>4 Baths</span>
+                                <span><i class="fas fa-ruler-combined mr-1"></i>3,200 sq ft</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-purple-600">$850,000</span>
+                            <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://static.toiimg.com/thumb/msid-111756563,width-1280,height-720,resizemode-4/111756563.jpg" alt="Luxury Estate" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Hot</div>
+                        <div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+                            <i class="far fa-heart text-gray-400 hover:text-red-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Luxury Mountain Estate</h3>
+                        <p class="text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>Eugene, OR
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-4 text-sm text-gray-600">
+                                <span><i class="fas fa-bed mr-1"></i>6 Beds</span>
+                                <span><i class="fas fa-bath mr-1"></i>5 Baths</span>
+                                <span><i class="fas fa-ruler-combined mr-1"></i>4,800 sq ft</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-purple-600">$2,100,000</span>
+                            <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition font-semibold">
+                    View All Properties <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive real estate solutions tailored to your needs</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="text-center p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="service-icon bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-home text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Property Buying</h3>
+                    <p class="text-gray-600 mb-6">Expert guidance through every step of the home buying process, from search to closing.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Property Search & Selection</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Market Analysis</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Negotiation Support</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Closing Assistance</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="text-center p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="service-icon bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-dollar-sign text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Property Selling</h3>
+                    <p class="text-gray-600 mb-6">Maximize your property value with our proven marketing strategies and expert negotiations.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Property Valuation</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Professional Photography</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Marketing & Promotion</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Buyer Screening</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="text-center p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="service-icon bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-key text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Property Rental</h3>
+                    <p class="text-gray-600 mb-6">Find the perfect rental property or manage your investment with our rental services.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Tenant Screening</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Property Management</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Lease Administration</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Maintenance Coordination</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="text-center p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="service-icon bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-orange-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Investment Consulting</h3>
+                    <p class="text-gray-600 mb-6">Strategic advice for real estate investments to maximize your portfolio returns.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>Market Research</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>ROI Analysis</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>Portfolio Planning</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>Risk Assessment</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="text-center p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="service-icon bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-red-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Commercial Real Estate</h3>
+                    <p class="text-gray-600 mb-6">Specialized services for commercial property transactions and investments.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-red-600 mr-2"></i>Office Buildings</li>
+                        <li><i class="fas fa-check text-red-600 mr-2"></i>Retail Spaces</li>
+                        <li><i class="fas fa-check text-red-600 mr-2"></i>Industrial Properties</li>
+                        <li><i class="fas fa-check text-red-600 mr-2"></i>Land Development</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="text-center p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="service-icon bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-calculator text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Property Valuation</h3>
+                    <p class="text-gray-600 mb-6">Accurate property assessments using advanced market analysis and comparable sales.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Market Value Assessment</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Comparative Analysis</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Investment Valuation</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Insurance Appraisals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About Beat Real Estate Agency</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        With over 10 years of experience in the real estate industry, Beat Real Estate Agency has established itself as a trusted partner for buyers, sellers, and investors throughout the region.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Our commitment to excellence, personalized service, and deep market knowledge has helped us build lasting relationships with our clients. We understand that buying or selling a property is one of life's most significant decisions, and we're here to guide you through every step of the process.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">500+</div>
+                            <div class="text-gray-600">Properties Sold</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">10+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">98%</div>
+                            <div class="text-gray-600">Client Satisfaction</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">15+</div>
+                            <div class="text-gray-600">Expert Agents</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span class="text-gray-700">Licensed and insured professionals</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span class="text-gray-700">Comprehensive market knowledge</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span class="text-gray-700">24/7 customer support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span class="text-gray-700">Advanced marketing strategies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://assets.inman.com/wp-content/uploads/2020/05/LeadingRE-Office-Design-Hero-Banner.jpg" alt="About Beat Real Estate" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-purple-600 text-white p-6 rounded-xl shadow-lg">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold">Award Winner</div>
+                            <div class="text-sm opacity-90">Best Real Estate Agency 2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Meet Our Expert Team</h2>
+                <p class="text-xl text-gray-600">Dedicated professionals committed to your success</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center">
+                    <div class="relative mb-6">
+                        <img src="https://oceanschoolofrealestate.com/wp-content/uploads/2022/11/building-real-estate-team.jpg" alt="Team Member" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg">
+                        <div class="absolute bottom-0 right-12 bg-purple-600 text-white p-2 rounded-full">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Sarah Johnson</h3>
+                    <p class="text-purple-600 font-semibold mb-2">Senior Real Estate Agent</p>
+                    <p class="text-gray-600 text-sm mb-4">10+ years experience in luxury properties</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="text-center">
+                    <div class="relative mb-6">
+                        <img src="https://www.mckissock.com/wp-content/uploads/2019/10/leading-her-team-to-the-top-picture-id1146087658-1024x512.jpg" alt="Team Member" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg">
+                        <div class="absolute bottom-0 right-12 bg-purple-600 text-white p-2 rounded-full">
+                            <i class="fas fa-award"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Michael Chen</h3>
+                    <p class="text-purple-600 font-semibold mb-2">Commercial Specialist</p>
+                    <p class="text-gray-600 text-sm mb-4">Expert in commercial real estate transactions</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="text-center">
+                    <div class="relative mb-6">
+                        <img src="https://www.thebalancemoney.com/thmb/-NJl59bDST61f0qKEH8qd-XyEXs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/male-real-estate-agent-shows-new-home-1182464673-309560bd6b544044b2fc8b7932ad81a1.jpg" alt="Team Member" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg">
+                        <div class="absolute bottom-0 right-12 bg-purple-600 text-white p-2 rounded-full">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Emily Rodriguez</h3>
+                    <p class="text-purple-600 font-semibold mb-2">Investment Advisor</p>
+                    <p class="text-gray-600 text-sm mb-4">Specializes in real estate investment strategies</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="text-center">
+                    <div class="relative mb-6">
+                        <img src="https://www.adhischools.com/images/blog_images/real_estate_broker.jpg" alt="Team Member" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg">
+                        <div class="absolute bottom-0 right-12 bg-purple-600 text-white p-2 rounded-full">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">David Thompson</h3>
+                    <p class="text-purple-600 font-semibold mb-2">Managing Broker</p>
+                    <p class="text-gray-600 text-sm mb-4">15+ years leading successful real estate teams</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600">Real experiences from satisfied customers</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Beat Real Estate Agency made our home buying experience smooth and stress-free. Sarah was incredibly knowledgeable and helped us find our dream home within our budget."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">John & Maria Smith</h4>
+                            <p class="text-gray-600 text-sm">Home Buyers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Professional, reliable, and results-driven. They sold our property above asking price in just two weeks! Highly recommend Beat Real Estate Agency."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Jennifer Wilson</h4>
+                            <p class="text-gray-600 text-sm">Property Seller</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Their investment consulting services helped me build a profitable real estate portfolio. Michael's expertise in commercial properties is unmatched."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Robert Davis</h4>
+                            <p class="text-gray-600 text-sm">Real Estate Investor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">Ready to start your real estate journey? Contact us today!</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                            <input type="tel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Service Interested In</label>
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                <option>Select a service</option>
+                                <option>Property Buying</option>
+                                <option>Property Selling</option>
+                                <option>Property Rental</option>
+                                <option>Investment Consulting</option>
+                                <option>Commercial Real Estate</option>
+                                <option>Property Valuation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Tell us about your real estate needs..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition font-semibold">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Address</h4>
+                                <p class="text-gray-600">123 Main Street<br>Downtown District<br>City, State 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Phone</h4>
+                                <p class="text-gray-600">(555) 123-4567<br>(555) 987-6543</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">info@beatrealestate.com<br>sales@beatrealestate.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-clock text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Business Hours</h4>
+                                <p class="text-gray-600">Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 5:00 PM<br>Sunday: 12:00 PM - 4:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">BEAT</h3>
+                    <p class="text-gray-300 mb-6">Your trusted partner in real estate success. We help you find, buy, sell, and invest in properties with confidence.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="#properties" class="text-gray-300 hover:text-white transition">Properties</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition">About</a></li>
+                        <li><a href="#team" class="text-gray-300 hover:text-white transition">Team</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Property Buying</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Property Selling</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Property Rental</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Investment Consulting</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Commercial Real Estate</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Property Valuation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                    <p class="text-gray-300 mb-4">Subscribe to get the latest property updates and market insights.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 p-3 rounded-l-lg text-gray-800">
+                        <button class="bg-purple-600 text-white px-6 py-3 rounded-r-lg hover:bg-purple-700 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">© 2024 Beat Real Estate Agency. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+</html>
